@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#9eb2c7;
+}
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    height: 100vh;
+}
+.counter{
+    font-size: 2rem;
+    text-align: center;
+    
+   
+}
+.number{
+    padding: 1rem 0 ;
+    font-size: 1.5rem;
+    font-weight: 700px;
+    text-align: center;
+}
+.btns{
+    gap:1rem
+}
+.btn{
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s linear;
+
+}
+.btn:hover{
+    transform: scale(1.1);
+}
