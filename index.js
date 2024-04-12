@@ -8,7 +8,7 @@ let value = parseInt(number.textContent);
 
 increase.addEventListener(('click'),()=>{
 
-    if(value>=0){
+    if(value>=-1){
         number.classList.remove('red')
     }
     value=+value+1;
