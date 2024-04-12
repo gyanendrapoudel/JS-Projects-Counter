@@ -7,8 +7,8 @@ const number = document.querySelector('.number')
 let value = parseInt(number.textContent);
 
 increase.addEventListener(('click'),()=>{
-    console.log(value)
-    if(value>0){
+
+    if(value>=0){
         number.classList.remove('red')
     }
     value=+value+1;
@@ -16,7 +16,7 @@ increase.addEventListener(('click'),()=>{
 })
 
 decrease.addEventListener('click', () => {
-  value = +value - 1
+  value = value - 1
   if(value<0){
     number.classList.add('red');
   }
