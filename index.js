@@ -17,13 +17,15 @@ increase.addEventListener(('click'),()=>{
 
 decrease.addEventListener('click', () => {
   value = value - 1
-  if(value<0){
+  if(value<=-1){
     number.classList.add('red');
   }
   number.textContent = value
 
 })
 reset.addEventListener('click', () => {
+  
+  number.classList.remove('red')
     value =0
   number.textContent=value
 })
